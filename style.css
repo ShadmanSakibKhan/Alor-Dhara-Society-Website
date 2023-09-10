@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Quicksand, sans-serif;
+  }
+
+  html {
+    font-size: 80%;
+  }
+
+  .search-input-wrapper {
+    width: 50%;
+    height: 2.5rem;
+    background-color: rgba(163, 6, 6, 0.5);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+  }
+  
+  .search-input-wrapper.change {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s 1s;
+  }
+  
+  .search-input {
+    width: 20rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input input {
+    width: 15rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.1rem solid #000000;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    outline: none;
+    color: #000000;
+    margin-right: 1rem;
+  }
+  
+  .search-input i {
+    font-size: 1rem;
+    color: #000000;
+    cursor: pointer;
+  }
+  
+  .search-icon {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+    animation: searchIconAnim2 0.5s forwards;
+  }
+  
+  .search-icon.change {
+    animation: searchIconAnim 1s forwards;
+  }
+  
+  .search-icon i {
+    color: #000000;
+    cursor: pointer;
+  }
+  
+  @keyframes searchIconAnim {
+    0% {
+      top: 0.2rem;
+    }
+  
+    40% {
+      top: 40%;
+      font-size: 25rem;
+    }
+  
+    60% {
+      top: 40%;
+      right: calc(50% + 16rem);
+    }
+  
+    100% {
+      top: 1.7rem;
+      right: calc(50% + 16rem);
+    }
+  }
+  
+  @keyframes searchIconAnim2 {
+    0% {
+      right: calc(50% + 16rem);
+    }
+  
+    100% {
+      right: 3rem;
+    }
+  }
+
+
+  .container {
+    display: inline-block;
+  } 
+  .container.dark {
+    background-color: #000000;
+  }
+  .toggle {
+    width: 3rem;
+    height: 3rem;
+    background-color: #000000;
+    position: absolute;
+    top: 3.5rem;
+    left: 5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 80%;
+    cursor: pointer;
+  }
+  .container.dark .toggle {
+    background-color: #fbff00;
+  }
+  .toggle i {
+    font-size: 2rem;
+    color: #000000;
+  }
+  .container.dark .toggle i {
+    color: #000000;
+  }
+  
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.news-ticker {
+    background-color: #07f7fffa;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+.ticker-content {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: ticker 25s linear infinite;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+@keyframes ticker {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+header {
+    background-color: #333;
+    color: #f7f3f3;
+    text-align: center;
+    padding: 10px;
+}
+nav {
+    background-color: #9b0808;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.jumbotron {
+    background-image: url('D:\6. Web Design\Alor Dhara Society (ADHASO)\image\adhaso.png');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
